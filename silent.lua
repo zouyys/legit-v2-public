@@ -1,5 +1,5 @@
 -- da hood private silent aim
-local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/main%20silent"))()
+local Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/main%20silent.lua"))()
 Aiming.TeamCheck(false)
 
 local Workspace = game:GetService("Workspace")
