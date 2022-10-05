@@ -19,7 +19,7 @@ local hotkey = getgenv().Key
 local switchkey = getgenv().FovKey 
 local mouse = game.Players.LocalPlayer:GetMouse()
 getgenv().autosetup = false 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/silent"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/silent.lua"))()
 DaHoodSettings.Prediction = getgenv().Prediction --ex (0.105)
 Aiming.TargetPart = getgenv().Parts -- {"UpperTorso","Head"} -- hitparts
 Aiming.FOV = getgenv().FOV --ex (size of fov 0 - 1000)
