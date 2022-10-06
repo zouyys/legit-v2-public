@@ -47,11 +47,11 @@ local mouseyea = game.Players.LocalPlayer:GetMouse()
     mouseyea.KeyDown:Connect(
         function(togglebro)
             if togglebro ==  getgenv().FovKey then
-                if Aiming.FOV == 10 then
+                if Aiming.FOV == 14 then
                     Aiming.FOV = 5
                     small:Play()
                 else
-                    Aiming.FOV = 10
+                    Aiming.FOV = 14
                     big:Play()
                 end
             end
