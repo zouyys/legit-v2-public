@@ -16,6 +16,7 @@ local Workspace = game:GetService("Workspace")
 
 
 local hotkey = getgenv().Key 
+local resolvekey = getgenv().ResolveKey
 local switchkey = getgenv().FovKey 
 local mouse = game.Players.LocalPlayer:GetMouse()
 getgenv().autosetup = false 
@@ -57,15 +58,30 @@ local mouseyea = game.Players.LocalPlayer:GetMouse()
         end
     )   
 
-local RunService = game:GetService("RunService")
-RunService.Heartbeat:Connect(function()
-    pcall(function()
-        for i,v in pairs(game.Players:GetChildren()) do
-            if v.Name ~= game.Players.LocalPlayer.Name then
-                local hrp = v.Character.HumanoidRootPart
-                hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
-                hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
+
+    local mouseyea = game.Players.LocalPlayer:GetMouse()
+    mouseyea.KeyDown:Connect(
+        function(resolveitnow)
+            if resolveitnow == getgenv().ResolveKey then
+
+                resolvedsound:Play()
+                local RunService = game:GetService("RunService")
+
+                RunService.Heartbeat:Connect(
+                    function()
+                        pcall(
+                            function()
+                                for i, v in pairs(game.Players:GetChildren()) do
+                                    if v.Name ~= game.Players.LocalPlayer.Name then
+                                        local hrp = v.Character.HumanoidRootPart
+                                        hrp.Velocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
+                                        hrp.AssemblyLinearVelocity = Vector3.new(hrp.Velocity.X, 0, hrp.Velocity.Z)
+                                    end
+                                end
+                            end
+                        )
+                    end
+                )
             end
         end
-    end)
-end)
+    )
