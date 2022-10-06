@@ -3,7 +3,7 @@ One of the best Da Hood streamables now public!
 Enjoy while you can you larps
 
 <h2 align="center">
-  Discord-Injection was made by
+   made with
 
 Love ❌ code ✅
 
