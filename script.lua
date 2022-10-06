@@ -6,7 +6,7 @@ getgenv().ResolveKey = "m" -- resolves anti locks
 
 getgenv().MacroKey = "x" -- to use the built in lua macro
 
-getgenv().AimlockKey = "q" -- spft aim key
+getgenv().AimlockKey = "q" -- soft aim key
 
 getgenv().Prediction = 0.121 -- prediction, this number in here is for 30-40 ping
 
