@@ -1,10 +1,14 @@
 getgenv().Key = "t" -- toggle key, basically if someone asks you to shoot near them you can untoggle the silent aim to look legit.
 
-getgenv().FovKey = "z"
+getgenv().FovKey = "z" -- fov switch key, if you dont wanna look blatant long range rev
 
-getgenv().ResolveKey = "m"
+getgenv().ResolveKey = "m" -- resolves anti locks
 
-getgenv().Prediction = 0.121 -- prediction, this number in here is for 30-40 ping, join .gg/vaulted discord.gg/silentaim for more preds
+getgenv().MacrokKey = "x" -- to use the built in lua macro
+
+getgenv().AimlockKey = "q" -- spft aim key
+
+getgenv().Prediction = 0.121 -- prediction, this number in here is for 30-40 ping
 
 getgenv().Hitchance = 85 -- hitchance, if it is set to 100 then it will hit all shots most likely, 60-85 are reccomended for legit
 
