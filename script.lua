@@ -4,7 +4,7 @@ getgenv().FovKey = "z" -- fov switch key, if you dont wanna look blatant long ra
 
 getgenv().ResolveKey = "m" -- resolves anti locks
 
-getgenv().MacrokKey = "x" -- to use the built in lua macro
+getgenv().MacroKey = "x" -- to use the built in lua macro
 
 getgenv().AimlockKey = "q" -- spft aim key
 
@@ -14,11 +14,10 @@ getgenv().Hitchance = 85 -- hitchance, if it is set to 100 then it will hit all 
 
 getgenv().Parts = {"Head", "UpperTorso", "LowerTorso", "RightFoot", "LeftFoot"}
 
-getgenv().FOV = 10 -- how big the fov size is, 5-9 if ur good at the game, 10-13 if ur slightly bad
+getgenv().FOV = 14 -- how big the fov size is, 5-9 if ur good at the game, 10-13 if ur slightly bad
 
 getgenv().FOVSides = 25 -- this is self explanitory 
 
 getgenv().ShowFOV = true -- show the fov circle or not.
 
-loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/main.lua"))()
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/source/main.lua"))()
