@@ -1,7 +1,9 @@
 <p align="center">
-  One of the best Da Hood streamables now public!
+  Enjoy while you can you larps
+</p>
 
-Enjoy while you can you larps
+<p align="center">
+  Enjoy while you can you larps
 </p>
 
 
