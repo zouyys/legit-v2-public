@@ -20,4 +20,8 @@ getgenv().FOVSides = 25 -- this is self explanitory
 
 getgenv().ShowFOV = true -- show the fov circle or not.
 
+getgenv().AimRadius = 9 -- fov for the soft aim
+
+getgenv().SmoothnessAmount = 0.008 -- smothing amount depending on your sensitivity
+
 loadstring(game:HttpGet("https://raw.githubusercontent.com/zouyys/legit-v2-public/main/source/main.lua"))()
