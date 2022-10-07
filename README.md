@@ -43,6 +43,9 @@ This project is licensed under the GNU General Public License v3.0 License
 ## 💭・ChangeLog
 
 ```diff
+v0.1.3 ⋮ 2022-10-7
++ Added Customization
+- Removed Some body parts for better fps
 v0.1.2 ⋮ 2022-10-6
 + Added Lua Macro
 ```
