@@ -97,15 +97,23 @@ local mouseyea = game.Players.LocalPlayer:GetMouse()
                 SpeedGlitch = not SpeedGlitch
                 if SpeedGlitch == true then
                     repeat
-                        game:GetService("RunService").Heartbeat:wait()
-                        keypress(0x49)
-                        game:GetService("RunService").Heartbeat:wait()
-                        keypress(0x4F)
-                        game:GetService("RunService").Heartbeat:wait()
-                        keyrelease(0x49)
-                        game:GetService("RunService").Heartbeat:wait()
-                        keyrelease(0x4F)
-                        game:GetService("RunService").Heartbeat:wait()
+                                   game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
+                                    wait()
+                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
+                                    wait()
+                    
                     until SpeedGlitch == false
                 end
             end
