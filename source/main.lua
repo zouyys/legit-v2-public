@@ -98,21 +98,20 @@ local mouseyea = game.Players.LocalPlayer:GetMouse()
                 if SpeedGlitch == true then
                     repeat
                                    game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
-                                    wait()
+                                    Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", true, game)
-                                    wait()
+                                   Heartbeat:wait()
                                     game:GetService("VirtualInputManager"):SendMouseWheelEvent("0", "0", false, game)
-                                    wait()
                     
                     until SpeedGlitch == false
                 end
