@@ -12,7 +12,7 @@ getgenv().Prediction = 0.121 -- prediction, this number in here is for 30-40 pin
 
 getgenv().Hitchance = 85 -- hitchance, if it is set to 100 then it will hit all shots most likely, 60-85 are reccomended for legit
 
-getgenv().Parts = {"Head", "UpperTorso", "LowerTorso", "RightFoot", "LeftFoot"}
+getgenv().Parts = {"Head", "UpperTorso","LowerTorso","LeftLowerLeg","RightLowerLeg"}
 
 getgenv().FOV = 14 -- how big the fov size is, 5-9 if ur good at the game, 10-13 if ur slightly bad
 
